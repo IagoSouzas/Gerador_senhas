@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const senha = gerarSenha(tamanho);
-        novoTamanho(senha);
+        document.getElementById('senha_gerada').innerHTML= senha;
+        novoTamanho(senha)
     });
 
     function gerarSenha(tamanho) {
@@ -23,12 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return senha;
     }
 
-    function novoTamanho(content) {
-        senhaGerada.textContent = content;
-        adjustHeight();
-    }
-
-    function adjustHeight() {
+    function novoTamanho() {
         senhaGerada.style.height = 'auto';
         senhaGerada.style.height = (senhaGerada.scrollHeight) + 'px';
     }
