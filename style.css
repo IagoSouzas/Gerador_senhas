@@ -1,0 +1,60 @@
+body {
+    padding: 1vw;
+    background-color: rgba(4, 4, 4, 0.744);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 14vw 0 8vw;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.gerador_senha {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    width: 97vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pergunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#generate{
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+#tamanho_caracteres {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#senha_gerada {
+    width: 30vh;
+    height: 15vh; /* Define a altura fixa */
+    resize: none; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: auto; /* Adiciona barra de rolagem se necessário */
+    background-color: #f9f9f9;
+}
